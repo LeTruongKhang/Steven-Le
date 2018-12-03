@@ -1,0 +1,30 @@
+import java.util.Scanner; 
+ 
+public class Main { 
+    public static void main(String[] args) { 
+        Scanner scanner = new Scanner(System.in); 
+ 
+        System.out.print("Please enter number of row(s): "); 
+        int row = scanner.nextInt(); 
+ 
+        System.out.print("Please enter number of column(s): "); 
+        int column = scanner.nextInt(); 
+ 
+        int[][] myMatrix = new int[row][column]; 
+ 
+        for (int i = 0; i < row; i++) { 
+            for (int j = 0; j < column; j++) { 
+                System.out.print("[Row][Column] => [" + i + "][" + j + "] = "); 
+                myMatrix[i][j] = scanner.nextInt(); 
+            } 
+        } 
+ 
+        System.out.println("Here Is Your Array"); 
+        for (int i = 0; i < row; i++) { 
+            for (int j = 0; j < column; j++) { 
+                System.out.print(myMatrix[i][j] + "  "); 
+            } 
+        } 
+ 
+    } 
+} 
